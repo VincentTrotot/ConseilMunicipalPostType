@@ -1,0 +1,19 @@
+{
+    "name": "vtrotot/conseil-municipal-post-type",
+    "description": "Conseil Municipal Custom Post Type for WordPress Theme",
+    "require": {
+        "timber/timber": "^1.18",
+        "symfony/http-foundation": "^5.3"
+    },
+    "authors": [
+        {
+            "name": "Vincent TROTOT",
+            "email": "vincent.trotot@icloud.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VincentTrotot\\ConseilMunicipal\\": "src/"
+        }
+    }
+}
