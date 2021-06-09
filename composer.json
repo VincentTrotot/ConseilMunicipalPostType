@@ -15,5 +15,6 @@
         "psr-4": {
             "VincentTrotot\\ConseilMunicipal\\": "src/"
         }
-    }
+    },
+    "license": "MIT"
 }
