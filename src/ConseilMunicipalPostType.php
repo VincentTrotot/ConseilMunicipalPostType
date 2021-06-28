@@ -94,7 +94,7 @@ class ConseilMunicipalPostType
     /**
      * Affiche la meta box
      */
-    public function dusplayMetabox()
+    public function displayMetabox()
     {
 
         $context['post'] = new ConseilMunicipal();
