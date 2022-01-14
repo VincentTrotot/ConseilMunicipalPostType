@@ -151,7 +151,7 @@ class ConseilMunicipalPostType
      * Paramétrage des messages de mise à jour  \
      * hook: post_updated_messages
      */
-    public function updatedMessages($messages) : string
+    public function updatedMessages($messages) : array
     {
         global $post, $post_ID;
         $request = new Request($_GET);
