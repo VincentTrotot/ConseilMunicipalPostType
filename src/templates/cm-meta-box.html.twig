@@ -3,7 +3,7 @@
 <div>
     {# Ordre du jour #}
     <p class="cm-filename-ordre-du-jour">{{ post.ordre_du_jour.name | default('Ordre du jour : ')}}</p>
-    <a href="#" class="button button-primary odj_upload">Choisir un document PDF</a>
+    <a href="#" class="button button-primary odj_upload">Choisir un ordre du jour (PDF)</a>
     <p><button type="button" class="components-button editor-post-trash is-tertiary is-destructive odj_delete">Supprimer le document</button></p>
 
     <input class="url-ordre-du-jour" type="hidden" name="url-ordre-du-jour" size="60" value="{{ post.ordre_du_jour.url }}">
@@ -13,7 +13,7 @@
 <div>
     {# Compte rendu audio #}
     <p class="cm-filename-audio">{{ post.audio.name | default('Compte rendu audio :') }}</p>
-    <a href="#" class="button button-primary audio_upload">Choisir un document audio</a>
+    <a href="#" class="button button-primary audio_upload">Choisir un compte rendu (audio)</a>
     <p><button type="button" class="components-button editor-post-trash is-tertiary is-destructive audio_delete">Supprimer le document</button></p>
 
     <input class="url-audio" type="hidden" name="url-audio" size="60" value="{{ post.audio.url }}">
@@ -23,7 +23,7 @@
 <div>
     {# Compte rendu PDF #}
     <p class="cm-filename-pdf">{{ post.pdf.name | default('Compte rendu PDF') }}</p>
-    <a href="#" class="button button-primary pdf_upload">Choisir un document PDF</a>
+    <a href="#" class="button button-primary pdf_upload">Choisir un compte rendu (PDF)</a>
     <p><button type="button" class="components-button editor-post-trash is-tertiary is-destructive pdf_delete">Supprimer le document</button></p>
 
     <input class="url-pdf" type="hidden" name="url-pdf" size="60" value="{{ post.pdf.url }}">
@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         $('.url-pdf').val('');
         $('.name-pdf').val('');
-        $('.cm-filename-pdf').html('Aucun document choisi');
+        $('.cm-filename-pdf').html('Compte rendu PDF');
     });
 
     $('.audio_upload').click(function(e) {
@@ -82,7 +82,7 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         $('.url-audio').val('');
         $('.name-audio').val('');
-        $('.cm-filename-audio').html('Aucun document choisi');
+        $('.cm-filename-audio').html('Compte rendu audio :');
     });
 
     $('.odj_upload').click(function(e) {
@@ -109,7 +109,7 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         $('.url-ordre-du-jour').val('');
         $('.name-ordre-du-jour').val('');
-        $('.cm-filename-ordre-du-jour').html('Aucun document choisi');
+        $('.cm-filename-ordre-du-jour').html('Ordre du jour :');
     });
 });
 </script>
